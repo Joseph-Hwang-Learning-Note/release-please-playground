@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      release: ${{ steps.release.outputs }}
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          # this assumes that you have created a personal access token
+          # (PAT) and configured it as a GitHub action secret named
+          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
+          token: ${{ secrets.GH_PAT }}
+          # optional. customize path to release-please-config.json
+          config-file: release-please-config.json
+          # optional. customize path to .release-please-manifest.json
+          manifest-file: .release-please-manifest.json
+
+  after-release:
+    needs: release-please
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          event: ${{ toJson(github.event) }}
+          release: ${{ toJson(needs.release-please.outputs.release) }}
+          ref: ${{ github.event.after }}
+        run: |
+          echo "event: $event"
+          echo "release: $release"
+          echo "ref: $ref"
