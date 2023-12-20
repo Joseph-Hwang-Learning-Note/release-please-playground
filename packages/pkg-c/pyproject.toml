@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pkg-c"
-version = "0.0.0"
+version = "0.1.0"
 description = ""
 authors = ["01Joseph-Hwang10 <joseph95501@gmail.com>"]
 readme = "README.md"
