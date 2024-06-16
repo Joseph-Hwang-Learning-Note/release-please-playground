@@ -1,6 +1,6 @@
 {
-  "packages/pkg-a": "1.1.0",
+  "packages/pkg-a": "1.1.1",
   "packages/pkg-b": "1.0.0",
   "packages/pkg-c": "0.1.0",
-  ".": "1.1.0"
+  ".": "1.1.1"
 }
