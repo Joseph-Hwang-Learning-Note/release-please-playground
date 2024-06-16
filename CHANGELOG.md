@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/compare/release-please-playground-v1.1.1...release-please-playground-v1.2.0) (2024-06-16)
+
+
+### Features
+
+* **pkg-a:** prerelease ([80fc7a2](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/commit/80fc7a2bcf42a704089a57dcde69074472885fc8))
+
+
+### Bug Fixes
+
+* **pkg-b:** fix ([8ac8157](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/commit/8ac81575ffa35236420c87f633de1a3a76a278b3))
+* prerelease 1 ([eae8ceb](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/commit/eae8ceb6a00f8cb1c982d5bb9470bfe6752b41f7))
+* prerelease 2 ([1624b1b](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/commit/1624b1b9b7476040b627476ba036ecfe7aff93fc))
+
 ## [1.1.1](https://github.com/Joseph-Hwang-Learning-Note/release-please-playground/compare/release-please-playground-v1.1.0...release-please-playground-v1.1.1) (2024-06-16)
 
 
