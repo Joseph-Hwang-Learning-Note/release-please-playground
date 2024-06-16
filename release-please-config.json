@@ -12,24 +12,21 @@
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false
+      "draft": false
     },
     "packages/pkg-a": {
       "release-type": "node",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false
+      "draft": false
     },
     "packages/pkg-b": {
       "release-type": "node",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false
+      "draft": false
     },
     "packages/pkg-c": {
       "release-type": "python",
@@ -37,8 +34,7 @@
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false
+      "draft": false
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
