@@ -1,5 +1,4 @@
 {
-  "prerelease": true,
   "plugins": [
     {
       "type": "node-workspace",
@@ -12,21 +11,24 @@
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false
+      "prerelease": true,
+      "prerelease-type": "beta"
     },
     "packages/pkg-a": {
       "release-type": "node",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false
+      "prerelease": true,
+      "prerelease-type": "beta"
     },
     "packages/pkg-b": {
       "release-type": "node",
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false
+      "prerelease": true,
+      "prerelease-type": "beta"
     },
     "packages/pkg-c": {
       "release-type": "python",
@@ -34,7 +36,8 @@
       "changelog-path": "CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
-      "draft": false
+      "prerelease": true,
+      "prerelease-type": "beta"
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
